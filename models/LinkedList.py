@@ -33,7 +33,7 @@ class LinkedList:
     
     def insert_after_item(self, x, data):
         n = self.start_node
-        print(n.ref)
+        #print(n.ref)
         while n is not None:
             if n.item == x:
                 break
@@ -57,7 +57,7 @@ class LinkedList:
             return
 
         n = self.start_node
-        print(n.ref)
+        #print(n.ref)
         while n.ref is not None:
             if n.ref.item is not None:
                 if n.ref.item == x:
@@ -110,7 +110,7 @@ class LinkedList:
                 print("Item found")
                 return True
             n = n.ref
-        print("item bot found")
+        print("item not found")
         return False
 
 
@@ -173,6 +173,5 @@ class LinkedList:
         for i in range(0, length - n):
             temp = temp.ref
         return temp.item
-
 
 
